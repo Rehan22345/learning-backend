@@ -1,4 +1,7 @@
 // const express = require("express");
+
+
+
 // const app = express();
 // const cors = require("cors");
 // const fs = require("fs")
@@ -33,3 +36,12 @@
 // //     name : inputvalue
 // //     email : inputvalue
 // // }
+
+
+
+// const fs = require('node:fs/promises');
+// async function readfile(){
+//     const file = await fs.writeFile("index.html","console.log('hello world')");
+//     console.log('hello world')
+// }
+// readfile()

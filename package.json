@@ -1,13 +1,20 @@
 {
-  "name": "teaching-dipson-dai",
+  "name": "learning-backend",
   "version": "1.0.0",
-  "description": "teaching node js and learning js ",
   "main": "app.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
-  "author": "Rehan & dipson dai",
-  "license": "ISC",
+  "keywords": [
+    "Node Js ",
+    "Express Js",
+    "Mongo Db"
+  ],
+  "author": "Rehan & Dipson Dai",
+  "license": "UNLICENSED",
+  "description": "This is a new package from me and dipson daii",
   "dependencies": {
     "express": "^4.21.0"
   }
