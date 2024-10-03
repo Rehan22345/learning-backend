@@ -1,0 +1,14 @@
+{
+  "name": "teaching-dipson-dai",
+  "version": "1.0.0",
+  "description": "teaching node js and learning js ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehan & dipson dai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
