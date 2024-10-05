@@ -1,47 +1,49 @@
-// const express = require("express");
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const fs = require("node:fs/promises");
+// const os = require("node:os");
 
 
 
-// const app = express();
-// const cors = require("cors");
-// const fs = require("fs")
-// app.use(cors());
-// app.use(express.json());
-// app.get("/",(req,res)=>{
-// res.send("Hello dai")
-// })
-// app.post("/",(req,res)=>{
-//    let {name,email,pass } =  req.body;
-//    let obj = {name,email,pass};
-// // {rehan , rehanpoudel@getMaxListeners.com ,rehan 123}
-// fs.writeFile("text.txt",JSON.stringify(obj),()=>{
-//     console.log("file created");
-// })
-
-// })
-// app.listen(7000,()=>{
-//     console.log("Server is running on port 3000");
-// })
+app.get("/", (req, res) => {
+  res.send("Hello dai");
+});
 
 
-// //? frontend bata data pathaunee and recieved in Backend
-// //! and store in a file that data 
+async function  getFiles() {
+  // const createfile = await fs.writeFile("text.txt","Hello dipson dai"); // create an new file with the given data
+// const readFile = await fs.readFile("text.txt","utf-8"); // read the data of the  file
+// const unlined = await fs.unlink("text.txt"); delete the file from the location 
+// const append = fs.appendFile("text.txt"," from rehan Paudel"); // Append some content to the already present file like updated
+// const copy = fs.copyFile("text.txt","rehan.txt") // copy the file and paste that into new file 
+// const newfolder = await fs.mkdir("Projects"); // creates an new directory 
+// const newfile = await fs.writeFile("Projects/rehan.txt","Hello rehan paudel from dispon daii ") making files inside a new dir / folder
+// const deletfolder = await fs.rmdir("Projects") // remove the folder  and all the files inside it
+// const file = await fs.readdir("Projects"); // it will read the files or return the files inside a particular directory orfolder 
+// console.log(file.length);
 
-// // axios.post("localhost:5000/",data)
-// // data => email and name 
-// // {
+// let detils = await fs.stat("text.txt"); // give proper details abou the file like size , creat time , append time and modified time
 
-// // }
-// // {
-// //     name : inputvalue
-// //     email : inputvalue
-// // }
+// console.log(detils);
 
 
 
-// const fs = require('node:fs/promises');
-// async function readfile(){
-//     const file = await fs.writeFile("index.html","console.log('hello world')");
-//     console.log('hello world')
-// }
-// readfile()
+}
+
+
+getFiles()
+
+
+
+
+
+app.listen(7000, () => {
+  console.log("Server is running on port 3000");
+});
+
+
+// WriteFile creates a new file
+// readFile read the data of the file
+// Unlink delete  the file
+
