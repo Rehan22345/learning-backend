@@ -191,3 +191,13 @@
 // let detils = await fs.stat("text.txt"); // give proper details abou the file like size , creat time , append time and modified time
 
 // console.log(detils);
+// console.log(os.cpus()) // it gives the information about cpu in an object 
+// console.log(os.arch())  // it gives u the architecture of your pc like x64 , arm
+// console.log(os.freemem()) // it gives the free memory in your system in bytes
+// console.log(os.totalmem()) // it gives the total  memory in your system in bytes
+// console.log(os.hostname())  // it gives the hostname of your system
+// console.log(os.platform()) // it gives the palfrom of ur system on which node js is running
+// console.log(os.userInfo()) // it gives th user information about the person who is using this system 
+// console.log(os.type()); // it gives the os type of your system or installed in your system 
+// console.log(os.networkInterfaces()); // it gives the information abou your netwrok or the network ur using
+//  // operating system modules os sambandhi details 
