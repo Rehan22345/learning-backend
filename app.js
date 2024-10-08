@@ -1,16 +1,9 @@
-const express =require('express');
-const dotenv = require("dotenv");
-const connect_database= require('./Database/connect.js');
-// const model = require("./Database/user.js");
-
-// Load environment variables from .env
-dotenv.config();
-connect_database();
+const express = require("express");
 const app = express();
 
-app.use(express.json());
-app.get('/', (req,res)=>{
-    res.send("Hello world !")
+
+app.get("/",(req,res)=>{
+    res.send("hello daii from  express");
 });
 
 
@@ -18,6 +11,8 @@ app.get('/', (req,res)=>{
 
 
 
-app.listen(3000, ()=>{
-    console.log('Server is running on port 3000');
-});
+
+app.listen(3000);
+
+
+

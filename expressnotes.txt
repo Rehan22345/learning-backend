@@ -1,0 +1,6 @@
+Importing express & other packages and how to install packages 
+we learn to make a routes using getmethod 
+get method help to get data in diff scenario 
+frontend ma hamiley get garekoxauu  vaii backend bata data janxa or pathainxa 
+if backend ma hamiley get garekoxauu  vanii data lini ho but url bata 
+and like creating our server and express appllications 
