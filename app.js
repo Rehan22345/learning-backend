@@ -1,20 +1,23 @@
 const express =require('express');
-const app = express();
+const dotenv = require("dotenv");
 const connect_database= require('./Database/connect.js');
-const model = require("./Database/user.js");
+// const model = require("./Database/user.js");
+
+// Load environment variables from .env
+dotenv.config();
 connect_database();
+const app = express();
+
 app.use(express.json());
 app.get('/', (req,res)=>{
     res.send("Hello world !")
 });
-app.post("/data",async(req,res)=>{
-const {name,pass}  = req.body;
-console.log(name,pass);
-await model.create({
-    name : name,
-    password : pass,
-})
-})
+
+
+
+
+
+
 app.listen(3000, ()=>{
     console.log('Server is running on port 3000');
 });
